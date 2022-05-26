@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article:nth-child(1) a{
+            color: red;
+        }
+
+        article:nth-child(3) > p{
+            color: red;
+        }
+
+        article:nth-child(5) h3 + p{ /*Que vem imediatamento depois do H3*/
+            color: red;
+        }
+
+        article:nth-child(7) h3 ~ p{ /*Quem vem depois do H3*/
+            color: orange;
+        }
+
+        article:not(.destaque){
+            color: orange;
+        }
+
+        .destaque{
+            background: yellow;
+        }
+
+        a[href=""]{
+            opacity: .2;
+        }
+
+        a[href^="http"]{
+            color: red;
+        }
+
+        a[title]{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+    
+    <hr>
+
+    <article>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+
+    <hr>
+
+    <article class="destaque">
+        <p>antes do capitulo</p>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+
+    <ul>
+        <li><a href="">Link falso</a></li>
+        <li><a href="">Link falso</a></li>
+        <li><a href="https://www.google.com/" target="__blank">Link externo</a></li>
+        <li><a href="22_fonteface.html" title="Veja exercicio anterior">Link interno</a></li>
+    </ul>
+
+</body>
+</html>

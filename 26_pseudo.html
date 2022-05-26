@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="checkbox"]{
+            width: 100px;
+            height: 100px;
+        }
+        input[type="checkbox"]:checked{
+            width: 10px;
+            height: 10px;
+        }
+
+        button:disabled{
+            background-color: blue;
+        }
+
+        p{
+            color: red;
+        }
+
+        p:empty::before{
+            content: "paragrafo vazio nao da";
+        }
+
+        input[type="text"]:focus{
+            background: #ccc;
+        }
+
+        a:focus, a:hover{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <label>
+        <input type="checkbox" value="sim"> Aceito o contrato 
+    </label>
+    <br>
+    <button>vai</button>
+    <button disabled>volta</button>
+
+    <p>Paragrafo 1</p>
+    <p> </p>
+    <p></p>
+    <hr>
+
+    <input type="text">
+
+    <ul>
+        <li><a href="#">Link Falso</a></li>
+        <li><a href="">Link Falso</a></li>
+        <li><a href="">Link Falso</a></li>
+        <li><a href="">Link Falso</a></li>
+
+    </ul>
+
+    <div tabindex="1">Div 1</div>
+    <div tabindex="2">Div 2</div>
+    <div tabindex="3">Div 3</div>
+</body>
+</html>

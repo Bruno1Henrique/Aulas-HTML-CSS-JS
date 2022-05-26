@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid red;
+            padding: 25px;
+        }
+
+        div::before{
+            content: "before: ";
+            background: #ccc;
+        }
+
+        div:after{
+            content: "";
+            background: red;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>Texto principal da DIV</div>
+
+    <article>
+        <p>antes do capitulo</p>
+        <h3>
+            Titulo
+        </h3>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+        <p>Paragrafo <a href="">Apenas um link com <b>negrito</b></a></p>
+    </article>
+
+    <ul>
+        <li><a href="">Link falso</a></li>
+        <li><a href="">Link falso</a></li>
+        <li><a href="https://www.google.com/" target="__blank">Link externo</a></li>
+        <li><a href="22_fonteface.html" title="Veja exercicio anterior">Link interno</a></li>
+    </ul>
+
+</body>
+</html>

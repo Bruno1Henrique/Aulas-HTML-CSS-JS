@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        html, body{
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            width: 150px;
+            height: 50px;
+            background: red;
+            transform: translate(50px,50px);
+        }
+
+        .div2{
+            width: 150px;
+            height: 50px;
+            background: blue;
+            position: relative;
+            left: 50%;
+        }
+
+        .div3{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div3-interna{
+            background: yellow;
+            transform: translateX(50%);
+        }
+
+        .div4{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div4-interna{
+            background: yellow;
+            transform: rotate(-25deg);
+        }
+
+        .div5{
+            width: 50%;
+            overflow: hidden;
+            border: solid 2px black;
+        }
+
+        .div5-interna{
+            background: yellow;
+            transform: rotate(-25deg);
+            transform-origin: left;
+        }
+
+        .div8{
+            width: 100px;
+            height: 100px;
+            background: orange;
+            transform: skewX(-70deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">Div1</div>
+    <div class="div2">Div2</div>
+    <hr>
+    <div class="div3">
+        <div class="div3-interna">Conteudo qualquer</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis nam a enim unde recusandae dolores, officiis veritatis mollitia ipsum modi qui iusto sunt voluptatibus, asperiores tempora quod laborum consequuntur.</p>
+    </div>
+
+    <hr>
+    <div class="div4">
+        <div class="div4-interna">Conteudo qualquer</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis nam a enim unde recusandae dolores, officiis veritatis mollitia ipsum modi qui iusto sunt voluptatibus, asperiores tempora quod laborum consequuntur.</p>
+    </div>
+
+    <hr>
+    <div class="div5">
+        <div class="div5-interna">Conteudo qualquer</div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur reiciendis nam a enim unde recusandae dolores, officiis veritatis mollitia ipsum modi qui iusto sunt voluptatibus, asperiores tempora quod laborum consequuntur.</p>
+    </div>
+
+    <hr>
+    <div class="div8">div8</div>
+    <div class="div9">div9</div>
+</body>
+</html>

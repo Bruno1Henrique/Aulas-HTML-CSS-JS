@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="#" method="POST" class="formLogin">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            
+            <label>E-mail</label> <!--Campo de tipo email-->
+            <input type="email"> <!--Campo de tipo email-->
+            <br>
+            <br>
+            <label>Numero de Filhos</label> <!--Fazer um range no campo-->
+            <input type="number" min="0" max="100"> <!--Fazer um range no campo-->
+            <br>
+            <br>
+            <label for="">Nascimento</label> <!--Fazer um campo do tipo data-->
+            <input type="date" min="1990-01-30" max="2139-01-30"> <!--Fazer um campo do tipo data-->
+            <br>
+            <p>Sexo</p>
+
+            <!-- POSSO FAZER ASSIM, PORÉM SE CLICAR EM CIMA DE "MASCULINO" OU "FEMININO NAO VAI MARCAR"
+            <label for="">Sexo:</label>
+            <input type="radio" name="sexo" value="M">
+            <label for="">Masculino</label>
+            <input type="radio" name="sexo" value="F">
+            <label for="">Feminino</label>-->
+            
+            <p>Sexo: </p>
+            <label>
+                <input type="radio" name="sexo" value="M"> <!--Selecionar masculino ou feminino-->
+                Masculino
+            </label>
+            <label>
+                <input type="radio" name="sexo" value="F">
+                Feminino
+            </label>
+            <br>
+            <br>
+            <input type="hydden" name="expira" value="2018-12-30">
+            <label>Estado</label> <!--Fazer um campo para selecionar uma opção. abre um caixa de select-->
+            <select name="estado">
+                <option value="0">Selecione</option> 
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Área de Interesse</legend> <!--Checkbox de opções-->
+
+            <label>
+            <input type="checkbox" name="html" value="html">
+            HTML
+            </label>
+            <label>
+                <input type="checkbox" name="css" value="css">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="js" value="js">
+                JavaScript
+            </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend> <!--Abrir uma caixa para digitar alguma informações-->
+                <textarea name="msg" id="" cols="30" rows="5" maxlength="20" style="resize: none;"></textarea>
+                
+                
+                <textarea name="contrato" id="" cols="30" rows="5"  readonly style="resize: none;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut voluptate perspiciatis harum dolore, minima ad veritatis, soluta atque provident, tempore reprehenderit cupiditate! Repellat laborum, consequuntur reprehenderit aperiam suscipit et quasi.</textarea>
+                <label>
+                <input type="checkbox"checked >Li e Aceito</label> 
+
+                <input type="range" min="0" max="10" step="2.5"> <!--Criar uma barra de range-->
+                <input type="time"> <!--Browser cria um botão para marcar tempo-->
+                <input type="color">
+                
+            </fieldset>
+                  
+            <br>
+            <input type="submit" value="mandar">
+            <input type="button" value="button">
+            <input type="reset" value="reset"> <!--Limpa todos os dados do formulario-->
+            
+        
+    </form>
+</body>
+</html>
